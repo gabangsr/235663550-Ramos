@@ -29,10 +29,33 @@ Integer 2: <input type="text" name= "y"/><br>
 </form> <br>
 
 Provided with the integers, here are the results from 4 different processes: <br>
-Sum: <?php echo $_POST[ + ]; ?>
-Difference:
-Product:
-Quotient: 
+ <?php 
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			$x = $_POST["x"];
+			$y = $_POST["y"];
+
+			if (is_numeric($x) && is_numeric($y)) {
+				$sum = $x + $y;
+
+				$difference = $x - $y;
+
+				$product = $x * $y;
+
+				$quotient = $x / $y;
+
+				echo "Sum: $sum<br>
+					  Difference: $difference<br>
+					  Product: $product<br>
+					  Quotient: $quotient <br>";
+			} else {
+				echo "Invalid Number Entered";
+			}
+		}
+		
+		
+		
+ ?>
+
 
 
 
