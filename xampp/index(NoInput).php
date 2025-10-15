@@ -5,38 +5,15 @@
 
 <!--Activity 1 -->
 <form method="POST">
-	#1 <br>
 Name: <input type="text" name="name"><br>
 Age: <input type="text" name="age"><br>
 Color: <input type="text" name="color"><br>
 E-mail: <input type="text" name="email"><br>
 <input type="submit">
-</form> <br>
+</form>
 
-Your name is <?php echo $_POST["name"]; ?>, <br>
-You are <?php echo $_POST["age"];?> years old, <br>
-Your favourite color is<?php echo $_POST["color"]; ?>, <br>
-and email address is: <?php echo $_POST["email"]; ?><br>
- 
-
-<!--Activity 2 -->
-<form method="POST">
-	#2 <br>
-Please input two integers: <br>
-Integer 1: <input type="text" name= "x"/><br>
-Integer 2: <input type="text" name= "y"/><br>
-<input type = "Submit" name="Calculate">
-</form> <br>
-
-Provided with the integers, here are the results from 4 different processes: <br>
-Sum: <?php echo $_POST[ + ]; ?>
-Difference:
-Product:
-Quotient: 
-
-
-
-
+Welcome <?php echo $_POST["name"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?>
 
 <?php
 
